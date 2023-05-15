@@ -20,7 +20,7 @@ let imageList = images
   .map(image => {
     return `<li class ='gallery_item'> <img src = ${image.url} alt = ${image.alt} width=400 class = 'image_gallery'</li>`
   })
-  .join('\n');
+  .join('');
 galleryRef.innerHTML = imageList;
 galleryRef.style.display = 'flex';
 galleryRef.style.flexWrap = 'column-reverse'
